@@ -20,7 +20,22 @@ public class changer : MonoBehaviour
     {
         if (collider.name == "Player")
         {
-            collider.tag = gameObject.tag
+            collider.tag = gameObject.tag;
+
+            if(gameObject.tag == "purple")
+            {
+                collider.GetComponent<SpriteRenderer>().color = new Color(0.37f, 0, 1, 1);
+            }
+
+            if (gameObject.tag == "yellow")
+            {
+                collider.GetComponent<SpriteRenderer>().color = new Color(1, 0.8f, 0, 1);
+            }
+
+            if (gameObject.tag == "red")
+            {
+                collider.GetComponent<SpriteRenderer>().color = new Color(1, 0, 0.3f, 1);
+            }
         }
     }
 }

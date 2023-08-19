@@ -12,6 +12,36 @@ public class player : MonoBehaviour
 
     float fix = 0.05f; //distance to go back and stop clipping on collision
 
+    //functions
+    void Stop() //make square stop dashing
+    {
+        slide = new Vector3(0, 0, 0);
+
+        if (direction == "up")
+        {
+            transform.position += new Vector3(0, -fix, 0);
+            direction = "";
+        }
+
+        if (direction == "down")
+        {
+            transform.position += new Vector3(0, fix, 0);
+            direction = "";
+        }
+
+        if (direction == "right")
+        {
+            transform.position += new Vector3(-fix, 0, 0);
+            direction = "";
+        }
+
+        if (direction == "left")
+        {
+            transform.position += new Vector3(fix, 0, 0);
+            direction = "";
+        }
+    }
+
     void Start()
     {
         
@@ -47,35 +77,29 @@ public class player : MonoBehaviour
             }
         }
 
+        //move
         transform.position += slide;
+
+        //change colors
+
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    //stop or go through on walls
+    void OnTriggerEnter2D(Collider2D collider)
     {
-        slide = new Vector3(0, 0, 0);
-
-        if(direction == "up")
+        if(collider.gameObject.GetComponent<Collider2D>().isTrigger != true)
         {
-            transform.position += new Vector3(0, -fix, 0);
-            direction = "";
-        }
+            if(collider.gameObject.tag == gameObject.tag)
+            {
 
-        if (direction == "down")
-        {
-            transform.position += new Vector3(0, fix, 0);
-            direction = "";
-        }
+            }
 
-        if (direction == "right")
-        {
-            transform.position += new Vector3(-fix, 0, 0);
-            direction = "";
-        }
-
-        if (direction == "left")
-        {
-            transform.position += new Vector3(fix, 0, 0);
-            direction = "";
+            else
+            {
+                Stop();
+            }
         }
     }
 }
+
+
