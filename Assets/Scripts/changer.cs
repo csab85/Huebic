@@ -15,4 +15,12 @@ public class changer : MonoBehaviour
     {
 
     }
+
+    void OnTriggerEnter2D(Collider2D collider)
+    {
+        if (collider.name == "Player")
+        {
+            collider.tag = gameObject.tag
+        }
+    }
 }
