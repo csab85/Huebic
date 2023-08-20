@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 1cebe5ec9c791b548bcc792c263bfab1
+guid: 05d3eb2a9293b4b4989a13796e79810a
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -117,7 +117,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Estrelinhas_troca_de_cor_0
+      name: Troca_0
       rect:
         serializedVersion: 2
         x: 0
@@ -131,14 +131,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 642ca970ef9aa7546ad40e5ed2eae08a
-      internalID: -1518357197
+      spriteID: 54acf1040653cf94b96fb8818e03307f
+      internalID: -1307908714
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Estrelinhas_troca_de_cor_1
+      name: Troca_1
       rect:
         serializedVersion: 2
         x: 32
@@ -152,14 +152,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0693793e90b8c3447885e549f13d377e
-      internalID: 1825957813
+      spriteID: d2d94ca5fee55dc47ae3c2160cfd18bc
+      internalID: -1842210059
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Estrelinhas_troca_de_cor_2
+      name: Troca_2
       rect:
         serializedVersion: 2
         x: 64
@@ -173,14 +173,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 93c0aba5a0b419f4293b8b810e9eba76
-      internalID: -1684117603
+      spriteID: 7c078f8046093b8409b9c4a5043976e4
+      internalID: -1925556409
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Estrelinhas_troca_de_cor_3
+      name: Troca_3
       rect:
         serializedVersion: 2
         x: 96
@@ -194,14 +194,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5b97fe3b65f1e284bbed92c2928a3d86
-      internalID: 1866957993
+      spriteID: ee507099c54d91e41be6c5c32385b1af
+      internalID: 2062086245
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Estrelinhas_troca_de_cor_4
+      name: Troca_4
       rect:
         serializedVersion: 2
         x: 0
@@ -215,14 +215,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d3751d30adf0fbf42b3e0634b929040f
-      internalID: 730936138
+      spriteID: 49c0e3f22dc28794791d3e820c567e08
+      internalID: -574345355
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Estrelinhas_troca_de_cor_5
+      name: Troca_5
       rect:
         serializedVersion: 2
         x: 32
@@ -236,14 +236,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 47f8b4f4ba568734584b14af32cb5f3c
-      internalID: -465848723
+      spriteID: b471445e398db2b42a6e9e4e19123767
+      internalID: -487531609
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Estrelinhas_troca_de_cor_6
+      name: Troca_6
       rect:
         serializedVersion: 2
         x: 64
@@ -257,14 +257,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 41bc6d7d9d761e345a737a39f42dd78b
-      internalID: 63055139
+      spriteID: 4d82afbf058f8ea41871149766691cc1
+      internalID: -896684121
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Estrelinhas_troca_de_cor_7
+      name: Troca_7
       rect:
         serializedVersion: 2
         x: 96
@@ -278,14 +278,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8bc86757295ed4f4bafa6625b9389fbc
-      internalID: 1950230734
+      spriteID: c6b79972469c7f7459f5098ed8007c34
+      internalID: 1888188356
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Estrelinhas_troca_de_cor_8
+      name: Troca_8
       rect:
         serializedVersion: 2
         x: 0
@@ -299,14 +299,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8172f4a8eb0e5064b9af1c118eb16857
-      internalID: -1180602567
+      spriteID: 21a058961635a0145acddcb8360fc864
+      internalID: -1619464639
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Estrelinhas_troca_de_cor_9
+      name: Troca_9
       rect:
         serializedVersion: 2
         x: 32
@@ -320,14 +320,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b2b6ae5ef28b8be449e81a0ecfbc4496
-      internalID: -1964499976
+      spriteID: 179289705e163164bb971cbb6a7817aa
+      internalID: 669368897
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Estrelinhas_troca_de_cor_10
+      name: Troca_10
       rect:
         serializedVersion: 2
         x: 64
@@ -341,14 +341,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c3f0e417c619d504c82c7490ce54a0f7
-      internalID: 2120883088
+      spriteID: a5b66195bb6866a4ab4035b365a345da
+      internalID: -1512721995
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Estrelinhas_troca_de_cor_11
+      name: Troca_11
       rect:
         serializedVersion: 2
         x: 96
@@ -362,14 +362,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 97b68e528e2cd6e449b1814b73bac04e
-      internalID: -1526499474
+      spriteID: db923e5df13535744b5e86d45f947b77
+      internalID: 1213451079
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Estrelinhas_troca_de_cor_12
+      name: Troca_12
       rect:
         serializedVersion: 2
         x: 0
@@ -383,14 +383,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b37559a4a1038a2409ce2ca8022a3474
-      internalID: -1801720867
+      spriteID: 22348fb30900115438c9c00cc94adb94
+      internalID: 1041113393
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Estrelinhas_troca_de_cor_13
+      name: Troca_13
       rect:
         serializedVersion: 2
         x: 32
@@ -404,14 +404,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c7a9bb1a5a658a746bd23326af478099
-      internalID: -1111268099
+      spriteID: 7b4dc2e0e4cb56045b772bb552d48670
+      internalID: -71927487
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Estrelinhas_troca_de_cor_14
+      name: Troca_14
       rect:
         serializedVersion: 2
         x: 64
@@ -425,29 +425,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: debc385576fe9ad41bdebf0394923041
-      internalID: 1726324914
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Estrelinhas_troca_de_cor_15
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cd8846e8bcb4cb44ca3791af3341246e
-      internalID: -569933544
+      spriteID: 9aa3ff7e77674fc408cc21302c89c326
+      internalID: -1702505744
       vertices: []
       indices: 
       edges: []
@@ -463,22 +442,21 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Estrelinhas_troca_de_cor_0: -1518357197
-      Estrelinhas_troca_de_cor_1: 1825957813
-      Estrelinhas_troca_de_cor_8: -1180602567
-      Estrelinhas_troca_de_cor_10: 2120883088
-      Estrelinhas_troca_de_cor_7: 1950230734
-      Estrelinhas_troca_de_cor_5: -465848723
-      Estrelinhas_troca_de_cor_3: 1866957993
-      Estrelinhas_troca_de_cor_11: -1526499474
-      Estrelinhas_troca_de_cor_9: -1964499976
-      Estrelinhas_troca_de_cor_2: -1684117603
-      Estrelinhas_troca_de_cor_4: 730936138
-      Estrelinhas_troca_de_cor_14: 1726324914
-      Estrelinhas_troca_de_cor_12: -1801720867
-      Estrelinhas_troca_de_cor_15: -569933544
-      Estrelinhas_troca_de_cor_13: -1111268099
-      Estrelinhas_troca_de_cor_6: 63055139
+      Troca_11: 1213451079
+      Troca_12: 1041113393
+      Troca_1: -1842210059
+      Troca_4: -574345355
+      Troca_13: -71927487
+      Troca_0: -1307908714
+      Troca_5: -487531609
+      Troca_8: -1619464639
+      Troca_10: -1512721995
+      Troca_7: 1888188356
+      Troca_14: -1702505744
+      Troca_6: -896684121
+      Troca_2: -1925556409
+      Troca_3: 2062086245
+      Troca_9: 669368897
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
