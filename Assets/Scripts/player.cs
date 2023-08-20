@@ -5,12 +5,12 @@ using UnityEngine;
 public class player : MonoBehaviour
 {
     //Stats
-    float speed = 0.05f;
+    float speed = 0.031f;
     string color;
     string direction = "";
     Vector3 slide;
 
-    float fix = 0.05f; //distance to go back and stop clipping on collision
+    float fix = 0.032f; //distance to go back and stop clipping on collision
 
     //sound arrays
     public AudioClip[] sounds;
