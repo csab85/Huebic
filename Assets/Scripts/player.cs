@@ -5,17 +5,22 @@ using UnityEngine;
 public class player : MonoBehaviour
 {
     //Stats
-    float speed = 0.01f;
+    float speed = 0.05f;
     string color;
     string direction = "";
     Vector3 slide;
 
     float fix = 0.05f; //distance to go back and stop clipping on collision
 
+    //sound arrays
+    public AudioClip[] sounds;
+
     //functions
     void Stop() //make square stop dashing
     {
         slide = new Vector3(0, 0, 0);
+        GetComponent<AudioSource>().clip = sounds[0];
+        GetComponent<AudioSource>().Play(); 
 
         if (direction == "up")
         {
@@ -91,7 +96,8 @@ public class player : MonoBehaviour
         {
             if(collider.gameObject.tag == gameObject.tag)
             {
-
+                GetComponent<AudioSource>().clip = sounds[1];
+                GetComponent<AudioSource>().Play();
             }
 
             else
