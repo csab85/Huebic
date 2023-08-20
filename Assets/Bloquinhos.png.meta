@@ -33,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -131,8 +131,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0dc3b7a2f221df045b9d465c8eb80227
-      internalID: -1300008154
+      spriteID: fbf3eb3926d66814284fc3b84816a5ad
+      internalID: 2091700887
       vertices: []
       indices: 
       edges: []
@@ -152,8 +152,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a35fed0f561fe2d4d8b90c5b1e79f3eb
-      internalID: -2000135025
+      spriteID: 11bd1c2102ce83f4889dfeda14ee799a
+      internalID: 1513890524
       vertices: []
       indices: 
       edges: []
@@ -173,8 +173,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8a0de91f6fc198e46857515fe520d9f9
-      internalID: 1354408766
+      spriteID: 897d8341f301c9d4fa1c88bd4da0c37e
+      internalID: 316508848
       vertices: []
       indices: 
       edges: []
@@ -194,8 +194,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 372a7e057c228b14989943a370268633
-      internalID: 671075970
+      spriteID: eb3904cb6fa9888468090be71170f30b
+      internalID: 1462633615
       vertices: []
       indices: 
       edges: []
@@ -211,10 +211,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Bloquinhos_3: 671075970
-      Bloquinhos_2: 1354408766
-      Bloquinhos_0: -1300008154
-      Bloquinhos_1: -2000135025
+      Bloquinhos_3: 1462633615
+      Bloquinhos_2: 316508848
+      Bloquinhos_0: 2091700887
+      Bloquinhos_1: 1513890524
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
