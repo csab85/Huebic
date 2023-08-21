@@ -5,6 +5,8 @@ using UnityEngine;
 public class camera : MonoBehaviour
 {
 
+    public bool change;
+
     GameObject bic;
     float growX = 0.003f;
     float growY = 0.003f;
@@ -20,7 +22,7 @@ public class camera : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(bic.tag == "purple" && changing == true)
+        if(changing == true && gameObject.tag == "changing")
         {
             gameObject.transform.position += new Vector3(growX, growY, 0);
             gameObject.GetComponent<Camera>().orthographicSize += growSize;

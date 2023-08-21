@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class player : MonoBehaviour
 {
+
+    GameObject cam;
+
     //Stats
     float speed = 0.01f;
     string color;
@@ -80,7 +83,7 @@ public class player : MonoBehaviour
 
     void Start()
     {
-        
+        cam = GameObject.Find("Main Camera");
     }
 
     void Update()
@@ -129,6 +132,7 @@ public class player : MonoBehaviour
             {
                 GetComponent<AudioSource>().clip = sounds[1];
                 GetComponent<AudioSource>().Play();
+                cam.tag = "changing";
             }
 
             else
