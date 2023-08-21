@@ -5,12 +5,12 @@ using UnityEngine;
 public class changer : MonoBehaviour
 {
 
-    GameObject player;
+    GameObject bic;
 
     // Start is called before the first frame update
     void Start()
     {
-        player = GameObject.Find("Player");
+        bic = GameObject.Find("Bic");
     }
 
     // Update is called once per frame
@@ -21,7 +21,7 @@ public class changer : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collider)
     {
-        if (collider.name == "Player")
+        if (collider.name == "Bic")
         {
             collider.tag = gameObject.tag;
 
