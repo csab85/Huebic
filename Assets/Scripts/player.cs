@@ -5,7 +5,7 @@ using UnityEngine;
 public class player : MonoBehaviour
 {
     //Stats
-    float speed = 0.03f;
+    float speed = 0.01f;
     string color;
     string direction = "";
     Vector3 slide;
