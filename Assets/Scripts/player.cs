@@ -5,17 +5,36 @@ using UnityEngine;
 public class player : MonoBehaviour
 {
     //Stats
-    float speed = 0.033f;
+    float speed = 0.03f;
     string color;
     string direction = "";
     Vector3 slide;
 
-    float fix = 0.001f; //distance to go back and stop clipping on collision
+    
 
     //sound arrays
     public AudioClip[] sounds;
 
     //functions
+    float fix(float value)
+    {
+        float roundValue = Mathf.Round(value);
+
+        if(roundValue > value)
+        {
+            roundValue -= 0.5f;
+            return roundValue;
+        }
+
+        if (roundValue < value)
+        {
+            roundValue += 0.5f;
+            return roundValue;
+        }
+
+        return value;
+    }
+
     void Stop() //make square stop dashing
     {
         slide = new Vector3(0, 0, 0);
@@ -24,27 +43,41 @@ public class player : MonoBehaviour
 
         if (direction == "up")
         {
-            transform.position += new Vector3(0, -fix, 0);
-            direction = "";
+            Vector3 posit = transform.position;
+            float positY = posit.y;
+            float positX = posit.x;
+
+            transform.position = new Vector3 (positX, fix(positY), 0);
         }
 
         if (direction == "down")
         {
-            transform.position += new Vector3(0, fix, 0);
-            direction = "";
+            Vector3 posit = transform.position;
+            float positY = posit.y;
+            float positX = posit.x;
+
+            transform.position = new Vector3 (positX, fix(positY), 0);
         }
 
         if (direction == "right")
         {
-            transform.position += new Vector3(-fix, 0, 0);
-            direction = "";
+            Vector3 posit = transform.position;
+            float positY = posit.y;
+            float positX = posit.x;
+
+            transform.position = new Vector3 (fix(positX), positY, 0);
         }
 
         if (direction == "left")
         {
-            transform.position += new Vector3(fix, 0, 0);
-            direction = "";
+            Vector3 posit = transform.position;
+            float positY = posit.y;
+            float positX = posit.x;
+
+            transform.position = new Vector3 (fix(positX), positY, 0);
         }
+
+        direction = "";
     }
 
     void Start()
