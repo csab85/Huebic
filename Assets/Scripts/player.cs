@@ -10,8 +10,6 @@ public class player : MonoBehaviour
     string direction = "";
     Vector3 slide;
 
-    
-
     //sound arrays
     public AudioClip[] sounds;
 

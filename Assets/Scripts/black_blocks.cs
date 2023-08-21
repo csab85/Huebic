@@ -41,7 +41,7 @@ public class black_blocks : MonoBehaviour
 
         if(gameObject.tag == "diferentao" && bic.tag == "purple")
         {
-            gameObject.transform.position += new Vector3(0.005f, 0, 0);
+            gameObject.transform.position += new Vector3(0.01f, 0, 0);
         }
     }
 }
