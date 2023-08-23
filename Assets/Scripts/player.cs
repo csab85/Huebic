@@ -8,7 +8,7 @@ public class player : MonoBehaviour
     GameObject cam;
 
     //Stats
-    float speed0 = 5;
+    float speed0 = 7;
     string direction = "";
     Vector3 slide;
 

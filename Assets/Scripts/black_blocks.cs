@@ -7,8 +7,9 @@ public class black_blocks : MonoBehaviour
 
     GameObject bic;
     GameObject cam;
-    float minusX = 0.001f;
-    float minusY = 0.001f;
+    float minusX = 1;
+    float minusY = 1;
+    float speed = 1;
 
     // Start is called before the first frame update
     void Start()
@@ -22,7 +23,7 @@ public class black_blocks : MonoBehaviour
     {
         if(cam.tag == "changing")
         {
-            gameObject.transform.localScale -= new Vector3(minusX, minusY, 0);
+            gameObject.transform.localScale -= new Vector3(minusX, minusY, 0) * Time.deltaTime;
         }
 
         Vector3 size = gameObject.transform.localScale;
@@ -44,22 +45,22 @@ public class black_blocks : MonoBehaviour
 
         if(gameObject.tag == "right" && cam.tag == "changing")
         {
-            gameObject.transform.position += new Vector3(2, 0, 0) * Time.deltaTime;
+            gameObject.transform.position += new Vector3(speed, 0, 0) * Time.deltaTime;
         }
 
         if (gameObject.tag == "left" && cam.tag == "changing")
         {
-            gameObject.transform.position += new Vector3(-2, 0, 0) * Time.deltaTime;
+            gameObject.transform.position += new Vector3(-speed, 0, 0) * Time.deltaTime;
         }
 
         if (gameObject.tag == "up" && cam.tag == "changing")
         {
-            gameObject.transform.position += new Vector3(0, 2, 0) * Time.deltaTime;
+            gameObject.transform.position += new Vector3(0, speed, 0) * Time.deltaTime;
         }
 
         if (gameObject.tag == "down" && cam.tag == "changing")
         {
-            gameObject.transform.position += new Vector3(0, -2, 0) * Time.deltaTime;
+            gameObject.transform.position += new Vector3(0, -speed, 0) * Time.deltaTime;
         }
     }
 }

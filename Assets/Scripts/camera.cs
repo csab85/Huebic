@@ -8,9 +8,9 @@ public class camera : MonoBehaviour
     public bool change;
 
     GameObject bic;
-    float growX = 0.002f;
-    float growY = 0.002f;
-    float growSize = 0.002f;
+    float growX = 0.5f;
+    float growY = 0.5f;
+    float growSize = 1;
     bool changing = true;
 
     // Start is called before the first frame update
@@ -24,8 +24,8 @@ public class camera : MonoBehaviour
     {
         if(changing == true && gameObject.tag == "changing")
         {
-            gameObject.transform.position += new Vector3(growX, growY, 0);
-            gameObject.GetComponent<Camera>().orthographicSize += growSize;
+            gameObject.transform.position += new Vector3(growX, growY, 0) * Time.deltaTime;
+            gameObject.GetComponent<Camera>().orthographicSize += growSize * Time.deltaTime;
         }
 
         Vector3 posit = gameObject.transform.position;
