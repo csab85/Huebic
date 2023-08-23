@@ -8,9 +8,11 @@ TagManager:
   - purple
   - yellow
   - red
-  - diferentao
-  - diferentaco
   - changing
+  - up
+  - down
+  - right
+  - left
   layers:
   - Default
   - TransparentFX

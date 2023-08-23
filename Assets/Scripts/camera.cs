@@ -8,9 +8,9 @@ public class camera : MonoBehaviour
     public bool change;
 
     GameObject bic;
-    float growX = 0.003f;
-    float growY = 0.003f;
-    float growSize = 0.003f;
+    float growX = 0.002f;
+    float growY = 0.002f;
+    float growSize = 0.002f;
     bool changing = true;
 
     // Start is called before the first frame update

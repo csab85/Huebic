@@ -8,7 +8,7 @@ public class player : MonoBehaviour
     GameObject cam;
 
     //Stats
-    float speed = 0.01f;
+    float speed0 = 5;
     string color;
     string direction = "";
     Vector3 slide;
@@ -89,35 +89,35 @@ public class player : MonoBehaviour
     void Update()
     {
         //CHANGE DIRECTIONS
-        if(direction == "")
+        if (direction == "")
         {
             if (Input.GetKeyDown(KeyCode.UpArrow))
             {
-                slide = new Vector3(0, speed, 0);
+                slide = new Vector3(0, speed0, 0);
                 direction = "up";
             }
 
             if (Input.GetKeyDown(KeyCode.DownArrow))
             {
-                slide = new Vector3(0, -speed, 0);
+                slide = new Vector3(0, -speed0, 0);
                 direction = "down";
             }
 
             if (Input.GetKeyDown(KeyCode.RightArrow))
             {
-                slide = new Vector3(speed, 0, 0);
+                slide = new Vector3(speed0, 0, 0);
                 direction = "right";
             }
 
             if (Input.GetKeyDown(KeyCode.LeftArrow))
             {
-                slide = new Vector3(-speed, 0, 0);
+                slide = new Vector3(-speed0, 0, 0);
                 direction = "left";
             }
         }
 
         //move
-        transform.position += slide;
+        transform.position += slide * Time.deltaTime;
 
         //change colors
 

@@ -7,8 +7,8 @@ public class black_blocks : MonoBehaviour
 
     GameObject bic;
     GameObject cam;
-    float minusX = 0.002f;
-    float minusY = 0.002f;
+    float minusX = 0.001f;
+    float minusY = 0.001f;
 
     // Start is called before the first frame update
     void Start()
@@ -42,14 +42,24 @@ public class black_blocks : MonoBehaviour
             Destroy(gameObject);
         }
 
-        if(gameObject.tag == "diferentao" && cam.tag == "changing")
+        if(gameObject.tag == "right" && cam.tag == "changing")
         {
-            gameObject.transform.position += new Vector3(0.01f, 0, 0);
+            gameObject.transform.position += new Vector3(2, 0, 0) * Time.deltaTime;
         }
 
-        if (gameObject.tag == "diferentaco" && cam.tag == "changing")
+        if (gameObject.tag == "left" && cam.tag == "changing")
         {
-            gameObject.transform.position += new Vector3(0, 0.01f, 0);
+            gameObject.transform.position += new Vector3(-2, 0, 0) * Time.deltaTime;
+        }
+
+        if (gameObject.tag == "up" && cam.tag == "changing")
+        {
+            gameObject.transform.position += new Vector3(0, 2, 0) * Time.deltaTime;
+        }
+
+        if (gameObject.tag == "down" && cam.tag == "changing")
+        {
+            gameObject.transform.position += new Vector3(0, -2, 0) * Time.deltaTime;
         }
     }
 }
