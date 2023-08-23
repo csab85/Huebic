@@ -9,7 +9,6 @@ public class player : MonoBehaviour
 
     //Stats
     float speed0 = 5;
-    string color;
     string direction = "";
     Vector3 slide;
 
