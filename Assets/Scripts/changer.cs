@@ -7,12 +7,15 @@ public class changer : MonoBehaviour
 
     public Animator animator;
     GameObject bic;
+    GameObject biclone;
     int waitingTime = 1;
+    string lastColor;
 
     // Start is called before the first frame update
     void Start()
     {
         bic = GameObject.Find("Bic");
+        biclone = GameObject.Find("Biclone");
         animator = bic.GetComponent<Animator>();
         waitingTime = 0;
     }
@@ -39,15 +42,18 @@ public class changer : MonoBehaviour
     {
         if (collider.name == "Bic")
         {
+            biclone.tag = collider.tag;
             collider.tag = gameObject.tag;
 
-            if(gameObject.tag == "purple")
+            //change bic color
+
+            if (gameObject.tag == "purple")
             {
                 collider.GetComponent<SpriteRenderer>().color = new Color(0.37f, 0, 1, 1);
                 GetComponent<AudioSource>().Play();
                 bic.GetComponent<Animator>().SetBool("transform", true);
                 waitingTime = 1;
-                
+
             }
 
             if (gameObject.tag == "yellow")
@@ -64,6 +70,28 @@ public class changer : MonoBehaviour
                 GetComponent<AudioSource>().Play();
                 bic.GetComponent<Animator>().SetBool("transform", true);
                 waitingTime = 1;
+            }
+
+            //change biclone color
+
+            if (biclone.tag == "purple")
+            {
+                biclone.GetComponent<SpriteRenderer>().color = new Color(0.37f, 0, 1, 1);
+            }
+
+            if (biclone.tag == "yellow")
+            {
+                biclone.GetComponent<SpriteRenderer>().color = new Color(1, 0.8f, 0, 1);
+            }
+
+            if (biclone.tag == "red")
+            {
+                biclone.GetComponent<SpriteRenderer>().color = new Color(1, 0, 0.3f, 1);
+            }
+
+            if (biclone.tag == "Untagged")
+            {
+                biclone.GetComponent<SpriteRenderer>().color = new Color(1, 1, 1, 1);
             }
         }
     }
