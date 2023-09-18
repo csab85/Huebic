@@ -16,7 +16,7 @@ public class player : MonoBehaviour
     public AudioClip[] sounds;
 
     //functions
-    float fix(float value)
+    float fix(float value) //make bic unclip from walls
     {
         float roundValue = Mathf.Round(value);
 
@@ -117,9 +117,6 @@ public class player : MonoBehaviour
 
         //move
         transform.position += slide * Time.deltaTime;
-
-        //change colors
-
     }
 
     //stop or go through on walls

@@ -5,7 +5,7 @@ using UnityEngine;
 public class black_blocks : MonoBehaviour
 {
 
-    GameObject bic;
+    GameObject player;
     GameObject cam;
     float minusX = 1;
     float minusY = 1;
@@ -14,8 +14,8 @@ public class black_blocks : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        bic = GameObject.Find("Bic");
-        cam = GameObject.Find("Main Camera");
+        player = GameObject.Find("Bic");
+        cam = GameObject.Find("MainCamera");
     }
 
     // Update is called once per frame
