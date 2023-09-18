@@ -1,4 +1,4 @@
-folders ---> normal (all lower case)
+folders ---> PascalCase
 assets/spritesheets/audios ---> snake_case
 game objects ---> PascalCase
 scripts ---> camelCase
